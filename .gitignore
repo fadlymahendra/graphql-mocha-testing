@@ -1,3 +1,4 @@
 reports
 node_modules
 api/helper/token.json
+.env
