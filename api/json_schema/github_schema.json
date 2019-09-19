@@ -1,0 +1,71 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "required": [
+    "data"
+  ],
+  "properties": {
+    "data": {
+      "$id": "#/properties/data",
+      "type": "object",
+      "required": [
+        "repository"
+      ],
+      "properties": {
+        "repository": {
+          "$id": "#/properties/data/properties/repository",
+          "type": "object",
+          "required": [
+            "issues"
+          ],
+          "properties": {
+            "issues": {
+              "$id": "#/properties/data/properties/repository/properties/issues",
+              "type": "object",
+              "required": [
+                "edges"
+              ],
+              "properties": {
+                "edges": {
+                  "$id": "#/properties/data/properties/repository/properties/issues/properties/edges",
+                  "type": "array",
+                  "items": {
+                    "$id": "#/properties/data/properties/repository/properties/issues/properties/edges/items",
+                    "type": "object",
+                    "required": [
+                      "node"
+                    ],
+                    "properties": {
+                      "node": {
+                        "$id": "#/properties/data/properties/repository/properties/issues/properties/edges/items/properties/node",
+                        "type": "object",
+                        "required": [
+                          "title",
+                          "url"
+                        ],
+                        "properties": {
+                          "title": {
+                            "$id": "#/properties/data/properties/repository/properties/issues/properties/edges/items/properties/node/properties/title",
+                            "type": "string",
+                            "pattern": "^(.*)$"
+                          },
+                          "url": {
+                            "$id": "#/properties/data/properties/repository/properties/issues/properties/edges/items/properties/node/properties/url",
+                            "type": "string",
+                            "pattern": "^(.*)$"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

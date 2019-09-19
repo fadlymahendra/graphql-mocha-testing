@@ -1,0 +1,20 @@
+{
+  "successOk": 200,
+  "successCreated": 201,
+  "successAccepted": 202,
+  "successNoContent": 204,
+  "failedBadRequest": {
+    "codeNumber": 400
+  },
+  "failedUnauthorized": {
+    "codeNumber": 401,
+    "codeMessage": "Bad credentials"
+  },
+  "failedForbiddenInvalidToken": {
+    "codeNumber": 403
+  },
+  "failedNotFound": {
+    "codeNumber": 404
+  },
+  "failedInternalServerError": 500
+}

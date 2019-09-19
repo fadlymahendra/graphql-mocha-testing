@@ -1,0 +1,26 @@
+{
+  "name": "grapql-mocha-testing",
+  "version": "1.0.0",
+  "description": "Test GraphQL API using Mocha, chai, supertest",
+  "main": "index.js",
+  "license": "ISC",
+  "scripts": {
+    "test-api": "./node_modules/mocha/bin/mocha ./api/test --recursive --reporter mochawesome --reporter-options reportDir=reports/mochawesome/ --timeout 30000",
+    "test": "mocha 'test/*.js'",
+    "reports": "open 'reports/mochawesome/mochawesome.html'"
+  },
+  "author": "Fadly Mahendra",
+  "dependencies": {
+    "mocha": "^5.2.0",
+    "chai": "^4.1.2",
+    "supertest": "^3.1.0",
+    "chai-json-schema": "^1.5.1",
+    "dotenv": "^7.0.0",
+    "mochawesome": "^3.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}
